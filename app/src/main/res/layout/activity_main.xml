@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dimensions.MainActivity"
+    >
+
+  <Button
+      android:id="@+id/button1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      android:layout_marginStart="@dimen/normal_100"
+      android:layout_marginTop="@dimen/normal_100"
+      style="@style/SmallButton"
+      tools:text="Button 1"
+      android:text="Button 1"
+      />
+  <Button
+      android:id="@+id/button2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/normal_100"
+      android:layout_marginTop="@dimen/normal_100"
+      style="@style/MediumButton"
+      tools:text="Button 2"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/button1"
+      android:text="Button 2"
+      />
+
+  <!-- This button is 'twice' as far from button2 as button2 is from button1 -->
+  <Button
+      android:id="@+id/button3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/normal_100"
+      android:layout_marginTop="@dimen/normal_200"
+      style="@style/BigButton"
+      tools:text="Button 3"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/button2"
+      android:text="Button 3"
+      />
+
+</android.support.constraint.ConstraintLayout>

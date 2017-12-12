@@ -1,0 +1,23 @@
+<resources>
+
+  <!-- All button styles kept in a single resource file. -->
+
+  <style name="SmallButton" parent="Widget.AppCompat.Button.Colored">
+    <item name="colorButtonNormal">@color/colorPrimary</item>
+    <item name="android:paddingLeft">@dimen/normal_100</item>
+    <item name="android:paddingRight">@dimen/normal_100</item>
+  </style>
+
+  <style name="MediumButton" parent="Widget.AppCompat.Button.Colored">
+    <item name="colorButtonNormal">@color/colorPrimary</item>
+    <item name="android:paddingLeft">@dimen/normal_200</item>
+    <item name="android:paddingRight">@dimen/normal_200</item>
+  </style>
+
+  <style name="BigButton" parent="Widget.AppCompat.Button.Colored">
+    <item name="colorButtonNormal">@color/colorPrimary</item>
+    <item name="android:paddingLeft">@dimen/normal_300</item>
+    <item name="android:paddingRight">@dimen/normal_300</item>
+  </style>
+
+</resources>
